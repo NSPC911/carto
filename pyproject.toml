@@ -47,6 +47,8 @@ dev = [
   "commitizen>=4.8.3",
   "json-schema-for-humans>=1.4.1",
   "poethepoet>=0.36.0",
+  "pytest>=8.0.0",
+  "pytest-asyncio>=0.23.0",
   "ruff>=0.11.12",
   "textual-dev>=1.7.0",
 ]
@@ -68,6 +70,7 @@ dev = "textual run --dev rovr.__main__:main"
 run = "rovr"
 log = "textual console -x WORKER -x SYSTEM -x DEBUG -x EVENT"
 "gen-schema" = "docs/scripts/generate_schema.py"
+test = "pytest src/rovr/tests/"
 
 [tool.ruff.lint]
 select = [

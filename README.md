@@ -60,6 +60,15 @@ uv run textual console
 ```
 For more info on Textual's console, refer to https://textual.textualize.io/guide/devtools/#console
 
+### Testing
+
+```pwsh
+# Run all tests
+uv run poe test
+# Run a specific test
+uv run pytest src/rovr/tests/test_init.py -v
+```
+
 ### FAQ
 
 1. There isn't X theme/Why isn't Y theme available?
